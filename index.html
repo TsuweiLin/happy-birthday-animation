@@ -22,5 +22,14 @@
       data-x_margin="18"
       data-y_margin="18"></script> -->
     <script src="happy birtday.js"></script>
+    <script>
+      // 確保音樂自動播放
+      window.addEventListener('load', function() {
+        var audio = document.getElementById('bg-music');
+        audio.play().catch(function(error) {
+          console.log('Autoplay was prevented:', error);
+        });
+      });
+    </script>
   </body>
 </html>
